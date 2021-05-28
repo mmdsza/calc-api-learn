@@ -19,42 +19,72 @@ clj꞉calc-api.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉calc-api.core꞉> 
 (in-ns 'calc-api.server.server)
-calc-api.server.server
-clj꞉calc-api.core꞉> (in-ns 'calc-api.server.server)
 #namespace[calc-api.server.server]
 clj꞉calc-api.server.server꞉> 
 (start)
-; Syntax error compiling at (.calva/output-window/output.calva-repl:26:1).
+; Syntax error compiling at (.calva/output-window/output.calva-repl:24:1).
 ; Unable to resolve symbol: start in this context
-clj꞉calc-api.server.server꞉> (in-ns calc-api.core)
-; Syntax error (ClassNotFoundException) compiling at (.calva/output-window/output.calva-repl:29:30).
-; calc-api.core
-clj꞉calc-api.server.server꞉> (in-ns 'calc-api.core)
-#namespace[calc-api.core]
-clj꞉calc-api.core꞉> n
-; Syntax error compiling at (.calva/output-window/output.calva-repl:1:7924).
-; Unable to resolve symbol: n in this context
-clj꞉calc-api.core꞉> (in-ns 'calc-api.server.server)
-#namespace[calc-api.server.server]
-clj꞉calc-api.server.server꞉> (hello-routes)
-; Syntax error compiling at (.calva/output-window/output.calva-repl:39:30).
-; Unable to resolve symbol: hello-routes in this context
 clj꞉calc-api.server.server꞉> 
-('hello-routes)
-; Execution error (ArityException) at calc-api.server.server/eval7431 (form-init7026066363795948112.clj:43).
-; Wrong number of args (0) passed to: clojure.lang.Symbol
-clj꞉calc-api.server.server꞉> 
-(app)
-; Syntax error compiling at (.calva/output-window/output.calva-repl:47:1).
-; Unable to resolve symbol: app in this context
-clj꞉calc-api.server.server꞉> (start)
-; Syntax error compiling at (.calva/output-window/output.calva-repl:50:30).
-; Unable to resolve symbol: start in this context
+(start-server)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:28:1).
+; Unable to resolve symbol: start-server in this context
+clj꞉calc-api.server.server꞉> (all-ns)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:31:30).
+; Unable to resolve symbol: all-ns in this context
 clj꞉calc-api.server.server꞉> 
 (in-ns 'calc-api.core)
 #namespace[calc-api.core]
 clj꞉calc-api.core꞉> 
-(calc-api.server.server/start)
-; Syntax error compiling at (.calva/output-window/output.calva-repl:57:1).
-; No such var: calc-api.server.server/start
+(all-ns)
+(#namespace[cider.nrepl.inlined-deps.orchard.v0v7v1.orchard.cljs.analysis]
+ #namespace[cider.nrepl.inlined-deps.orchard.v0v7v1.orchard.util.os]
+ #namespace[nrepl.middleware.interruptible-eval]
+ #namespace[cider.nrepl.pprint]
+ #namespace[cider.nrepl.middleware.track-state]
+ #namespace[clojure.stacktrace]
+ #namespace[cider.nrepl.middleware.util.nrepl]
+ #namespace[clojure.test]
+ #namespace[cider.nrepl.inlined-deps.toolsreader.v1v3v2.clojure.tools.reader]
+ #namespace[cider.nrepl.middleware.content-type]
+ #namespace[cider.nrepl.middleware.debug]
+ #namespace[clojure.core.server]
+ #namespace[clojure.core.specs.alpha]
+ #namespace[cider.nrepl.inlined-deps.dynapath.v1v1v0.dynapath.defaults]
+ #namespace[nrepl.server]
+ #namespace[nrepl.middleware.session]
+ #namespace[cider.nrepl.middleware.util.coerce]
+ #namespace[clojure.reflect]
+ #namespace[cider.nrepl.middleware.inspect]
+ #namespace[cider.nrepl.inlined-deps.orchard.v0v7v1.orchard.java.resource]
+ #namespace[cider.nrepl.inlined-deps.javaclasspath.v1v0v0.clojure.java.classpath]
+ #namespace[cider.nrepl.middleware.util.error-handling]
+ #namespace[nrepl.middleware.caught]
+ #namespace[cider.nrepl.inlined-deps.toolsreader.v1v3v2.clojure.tools.reader.default-data-readers]
+ #namespace[cider.nrepl.inlined-deps.dynapath.v1v1v0.dynapath.dynamic-classpath]
+ #namespace[clojure.spec.alpha]
+ #namespace[nrepl.util.completion]
+ #namespace[cider.nrepl.inlined-deps.toolsnamespace.v1v0v0.clojure.tools.namespace.dependency]
+ #namespace[cider.nrepl.middleware.ns]
+ #namespace[cider.nrepl.inlined-deps.orchard.v0v7v1.orchard.eldoc]
+ #namespace[clojure.set]
+ #namespace[cider.nrepl.middleware.complete]
+ #namespace[cider.nrepl.middleware.stacktrace]
+ #namespace[cider.nrepl.inlined-deps.compliment.v0v3v11.compliment.sources]
+ #namespace[nrepl.ack]
+ #namespace[cider.nrepl.inlined-deps.suitable.v0v4v0.suitable.js-completions]
+ #namespace[clojure.string]
+ #namespace[clojure.java.browse]
+ #namespace[cider.nrepl.inlined-deps.orchard.v0v7v1.orchard.misc]
+ #namespace[cider.nrepl.inlined-deps.orchard.v0v7v1.orchard.java]
+ #namespace[clojure.java.javadoc]
+ #namespace[cider.nrepl.inlined-deps.toolsreader.v1v3v2.clojure.tools.reader.impl.inspect]
+ #namespace[cider.nrepl.inlined-deps.compliment.v0v3v11.compliment.sources.keywords]
+ #namespace[clojure.repl]
+ #namespace[cider.nrepl.inlined-deps.orchard.v0v7v1.orchard.clojuredocs]
+ #namespace[cider.nrepl.inlined-deps.suitable.v0v4v0.suitable.ast]
+ #namespace[cider.nrepl.inlined-deps.compliment.v0v3v11.compliment.sources.namespaces-and-classes]
+ #namespace[cider.nrepl.inlined-deps.orchard.v0v7v1.orchard.query]
+ #namespace[cider.nrepl.inlined-deps.suitable.v0v4v0.suitable.complete-for-nrepl]
+ #namespace[cider.nrepl.inlined-deps.dynapath.v1v1v0.dynapath.util]
+ ...)
 clj꞉calc-api.core꞉> 

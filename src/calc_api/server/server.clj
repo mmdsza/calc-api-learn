@@ -7,6 +7,13 @@
             [reitit.ring.coercion :as coercion]
             [reitit.ring :as ring]))
 
+
+(def hello-routes
+  ["/hello" {:get {:handler (fn [_]
+                              (response/ok {:mesage "Hello Reitit!"}))}}])
+
+
+
 (def app
   (ring/ring-handler
    (ring/router
@@ -18,14 +25,6 @@
                          coercion/coerce-request-middleware
                          coercion/coerce-response-middleware]}})
    (ring/create-default-handler)))
-
-
-
-(def hello-routes
-  ["/hello" {:get {:handler (fn [_]
-                              (response/ok {:mesage "Hello Reitit!"}))}}])
-
-
 
 (defonce running-server (atom nil))
 
