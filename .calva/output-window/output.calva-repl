@@ -1,0 +1,60 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.8.3"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.26.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉calc-api.core꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉calc-api.core꞉> 
+(in-ns 'calc-api.server.server)
+calc-api.server.server
+clj꞉calc-api.core꞉> (in-ns 'calc-api.server.server)
+#namespace[calc-api.server.server]
+clj꞉calc-api.server.server꞉> 
+(start)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:26:1).
+; Unable to resolve symbol: start in this context
+clj꞉calc-api.server.server꞉> (in-ns calc-api.core)
+; Syntax error (ClassNotFoundException) compiling at (.calva/output-window/output.calva-repl:29:30).
+; calc-api.core
+clj꞉calc-api.server.server꞉> (in-ns 'calc-api.core)
+#namespace[calc-api.core]
+clj꞉calc-api.core꞉> n
+; Syntax error compiling at (.calva/output-window/output.calva-repl:1:7924).
+; Unable to resolve symbol: n in this context
+clj꞉calc-api.core꞉> (in-ns 'calc-api.server.server)
+#namespace[calc-api.server.server]
+clj꞉calc-api.server.server꞉> (hello-routes)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:39:30).
+; Unable to resolve symbol: hello-routes in this context
+clj꞉calc-api.server.server꞉> 
+('hello-routes)
+; Execution error (ArityException) at calc-api.server.server/eval7431 (form-init7026066363795948112.clj:43).
+; Wrong number of args (0) passed to: clojure.lang.Symbol
+clj꞉calc-api.server.server꞉> 
+(app)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:47:1).
+; Unable to resolve symbol: app in this context
+clj꞉calc-api.server.server꞉> (start)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:50:30).
+; Unable to resolve symbol: start in this context
+clj꞉calc-api.server.server꞉> 
+(in-ns 'calc-api.core)
+#namespace[calc-api.core]
+clj꞉calc-api.core꞉> 
+(calc-api.server.server/start)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:57:1).
+; No such var: calc-api.server.server/start
+clj꞉calc-api.core꞉> 
